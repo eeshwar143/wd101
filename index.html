@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" type="text/css" href="sam.css">
+</head>
+<body>
+    <center><h1>Registration page</h1></center>
+    <form id="registrationForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter Full Name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter Email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter password" name="password" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <center><input type="checkbox" id="acceptedTerms" name="acceptedTerms" required><label for="acceptedTerms">Accept Terms & Conditions:</label></center>
+        <center><button type="submit">Register</button></center>
+    </form>
+    <big><b><center>Entries</center></b></big>
+    <table id="userData">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Dob</th>
+                <th>Accepted terms?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- This tbody section is initially empty and will be populated with user data after submission -->
+        </tbody>
+    </table>
+    <script src="index.js"></script>
+</body>
+</html>
